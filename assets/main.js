@@ -1046,6 +1046,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const MIN_VELOCITY = 0.05; // px/ms threshold to stop
 
 	// Use a wrapper if overflow hidden is on outer container
+	if(!slider) return;
 	const parent = slider.parentElement;
 	slider.style.transition = "none";
 
