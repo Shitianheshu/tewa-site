@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Make logo clickable → redirect to index
 	Array.from(document.querySelectorAll('img'))
-		.filter(img => /(^|\/|\\)logo\.png$/i.test(img.getAttribute('src') || ''))
+		.filter(img => /(^|\/|\\)logo\.webp$/i.test(img.getAttribute('src') || ''))
 		.forEach(img => {
 			img.style.cursor = 'pointer';
 			img.addEventListener('click', (e) => {
